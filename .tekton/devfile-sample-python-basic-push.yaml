@@ -389,7 +389,7 @@ spec:
         - name: name
           value: clamav-scan
         - name: bundle
-          value: quay.io/konflux-ci/pull-request-builds:clamav-scan-0.2@sha256:93e992fd22a312ea9f2dbefec963b5d40d850c019ea70f4149692a6aac5d545c
+          value: quay.io/konflux-ci/pull-request-builds:clamav-scan-0.2@sha256:4077a00ef2c1ce6e06052a08ae5ec3db8ec04bda0ba810812b99df7da3919cc7
         - name: kind
           value: task
         resolver: bundles
