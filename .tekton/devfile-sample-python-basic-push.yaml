@@ -364,6 +364,8 @@ spec:
         value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
       - name: CACHI2_ARTIFACT
         value: $(tasks.prefetch-dependencies.results.CACHI2_ARTIFACT)
+      - name: ARGS
+        value: "--project-name=snyk-org-example --report --org=1680ce6a-d731-4688-963b-dc68e638c689"
       runAfter:
       - build-image-index
       taskRef:
