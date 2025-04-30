@@ -102,7 +102,7 @@ spec:
       description: Path to a file with build arguments for buildah, see https://www.mankier.com/1/buildah-build#--build-arg-file
       name: build-args-file
       type: string
-    - default: "snyk-token"
+    - default: snyk-token
       description: Snyk Token Secret Name
       name: snyk-secret
       type: string
@@ -365,7 +365,7 @@ spec:
       - name: CACHI2_ARTIFACT
         value: $(tasks.prefetch-dependencies.results.CACHI2_ARTIFACT)
       - name: ARGS
-        value: "--project-name=snyk-org-example --report --org=1680ce6a-d731-4688-963b-dc68e638c689"
+        value: --project-name=snyk-org-example --report --org=1680ce6a-d731-4688-963b-dc68e638c689
       runAfter:
       - build-image-index
       taskRef:
@@ -469,7 +469,8 @@ spec:
       optional: true
     - name: netrc
       optional: true
-  taskRunTemplate: {}
+  taskRunTemplate:
+    serviceAccountName: build-pipeline-devfile-sample-python-basic
   workspaces:
   - name: git-auth
     secret:
