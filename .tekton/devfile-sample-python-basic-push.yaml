@@ -11,7 +11,7 @@ metadata:
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: rrrr
-    appstudio.openshift.io/component: devfile-sample-python-basic
+    appstudio.openshift.io/component: devfile-sample-python-basic-b323c
     pipelines.appstudio.openshift.io/type: build
   name: devfile-sample-python-basic-on-push
   namespace: kalem-tenant
