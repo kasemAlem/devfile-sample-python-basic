@@ -11,7 +11,7 @@ metadata:
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: rrrr
-    appstudio.openshift.io/component: devfile-sample-python-basic
+    appstudio.openshift.io/component: devfile-sample-python-basic-b323c
     pipelines.appstudio.openshift.io/type: build
   name: devfile-sample-python-basic-on-push
   namespace: kalem-tenant
@@ -395,7 +395,7 @@ spec:
         - name: name
           value: clamav-scan
         - name: bundle
-          value: quay.io/konflux-ci/pull-request-builds:clamav-scan-0.2@sha256:2c11b2d773a150cdf3515e9ee2e9264273eabea3a4c51457f9380a75c7c3b54c
+          value: quay.io/konflux-ci/tekton-catalog:task-clamav-scan-0.2@sha256:b96301717255b82dcd81073e6ef65305bdb622935696154d736c7291beae9d44
         - name: kind
           value: task
         resolver: bundles
