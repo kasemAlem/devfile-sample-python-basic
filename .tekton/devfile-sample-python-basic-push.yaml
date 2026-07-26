@@ -447,7 +447,8 @@ spec:
       optional: true
     - name: netrc
       optional: true
-  taskRunTemplate: {}
+  taskRunTemplate:
+    serviceAccountName: build-pipeline-devfile-sample-python-basic-b323c
   workspaces:
   - name: git-auth
     secret:
