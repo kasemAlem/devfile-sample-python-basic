@@ -20,3 +20,4 @@ Before you begin creating an application with this `devfile` code sample, it's h
 
 <!-- nudge validation trigger: 2026-07-28T16:15:02Z -->
 # trigger build Thu Oct  8 02:24:28 PM IDT 2026
+# rollback test Thu Oct  8 03:28:53 PM IDT 2026
